@@ -1,0 +1,7 @@
+timer.json
+__pycache__/
+venv/
+.idea/
+build/
+dist/
+*.exe
