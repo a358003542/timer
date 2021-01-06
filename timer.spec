@@ -4,9 +4,9 @@ block_cipher = None
 
 
 a = Analysis(['timer.py'],
-             pathex=['D:\\github_workspace\\timer'],
+             pathex=['D:\\github_workspace\\backup\\timer'],
              binaries=[],
-             datas=[('images/myapp.ico', '.')],
+             datas=[('images/timer.ico', '.')],
              hiddenimports=[],
              hookspath=[],
              runtime_hooks=[],

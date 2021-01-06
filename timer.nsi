@@ -2,7 +2,7 @@
 
 ; HM NIS Edit Wizard helper defines
 !define PRODUCT_NAME "timer"
-!define PRODUCT_VERSION "1.3.0"
+!define PRODUCT_VERSION "1.3.1"
 !define PRODUCT_PUBLISHER "wanze"
 !define PRODUCT_DIR_REGKEY "Software\Microsoft\Windows\CurrentVersion\App Paths\timer.exe"
 !define PRODUCT_UNINST_KEY "Software\Microsoft\Windows\CurrentVersion\Uninstall\${PRODUCT_NAME}"
@@ -13,8 +13,8 @@
 
 ; MUI Settings
 !define MUI_ABORTWARNING
-!define MUI_ICON "dist\timer\myapp.ico"
-!define MUI_UNICON "dist\timer\myapp.ico"
+!define MUI_ICON "dist\timer\timer.ico"
+!define MUI_UNICON "dist\timer\timer.ico"
 
 ; Welcome page
 !insertmacro MUI_PAGE_WELCOME
@@ -48,14 +48,14 @@ Section "MainSection" SEC01
   SetOverwrite try
   File "dist\timer\*.dll"
   File "dist\timer\base_library.zip"
-  File "dist\timer\myapp.ico"
+  File "dist\timer\timer.ico"
   File "dist\timer\*.pyd"
   File /r "dist\timer\PySide2"
   File /r "dist\timer\shiboken2"
   File "dist\timer\timer.exe"
   CreateDirectory "$SMPROGRAMS\timer"
-  CreateShortCut "$SMPROGRAMS\timer\timer.lnk" "$INSTDIR\timer.exe" "" "$INSTDIR\myapp.ico"
-  CreateShortCut "$DESKTOP\timer.lnk" "$INSTDIR\timer.exe" "" "$INSTDIR\myapp.ico"
+  CreateShortCut "$SMPROGRAMS\timer\timer.lnk" "$INSTDIR\timer.exe" "" "$INSTDIR\timer.ico"
+  CreateShortCut "$DESKTOP\timer.lnk" "$INSTDIR\timer.exe" "" "$INSTDIR\timer.ico"
   File "dist\timer\timer.exe.manifest"
 SectionEnd
 
@@ -92,7 +92,7 @@ Section Uninstall
   Delete "$INSTDIR\timer.exe"
   RMDir /r "$INSTDIR\shiboken2"
   RMDir /r "$INSTDIR\PySide2"
-  Delete "$INSTDIR\myapp.ico"
+  Delete "$INSTDIR\timer.ico"
   Delete "$INSTDIR\base_library.zip"
   Delete "$SMPROGRAMS\timer\Uninstall.lnk"
   Delete "$DESKTOP\timer.lnk"

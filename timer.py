@@ -18,7 +18,7 @@ from libs.pyside2_helper import Loginfo, SystemTrayIcon
 
 from libs.recordTable import RecordTable
 
-VERSION = '1.3.0'
+VERSION = '1.3.1'
 
 LOG_INTERVAL = 10  # s
 RECORD_SAVE_NUM = 1000  # 保存的运行记录
@@ -201,7 +201,7 @@ class Timer(QMainWindow):
         self.setFixedSize(300, 450)
         self.center()
         self.setWindowTitle('timer')
-        self.setWindowIcon(QIcon(':/images/myapp.png'))
+        self.setWindowIcon(QIcon(':/images/timer.png'))
 
         menu_control = self.menuBar().addMenu(self.tr('Contorl'))
         act_countDownBeep = menu_control.addAction(
@@ -237,7 +237,7 @@ class Timer(QMainWindow):
         self.mywidget = MainWidget(self)
         self.setCentralWidget(self.mywidget)
 
-        self.mysystemTrayIcon = SystemTrayIcon(self, icon=":/images/myapp.png")
+        self.mysystemTrayIcon = SystemTrayIcon(self, icon=":/images/timer.png")
         menu1 = QMenu(self)
         menu_systemTrayIcon_open = menu1.addAction(self.tr('open'))
         menu_systemTrayIcon_open.triggered.connect(self.reopen)
