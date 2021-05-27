@@ -1,0 +1,123 @@
+<!DOCTYPE QPH>
+<QPH language="zh_CN">
+<phrase>
+    <source>Ok</source>
+    <target>好的</target>
+</phrase>
+<phrase>
+    <source>start countup</source>
+    <target>开始计时器</target>
+</phrase>
+<phrase>
+    <source>pause countup</source>
+    <target>暂停计时器</target>
+</phrase>
+<phrase>
+    <source>reset countup</source>
+    <target>重设计时器</target>
+</phrase>
+<phrase>
+    <source>start countdown</source>
+    <target>开始倒计时器</target>
+</phrase>
+<phrase>
+    <source>pause countdown</source>
+    <target>暂停倒计时器</target>
+</phrase>
+<phrase>
+    <source>reset countdown</source>
+    <target>重设倒计时器</target>
+</phrase>
+<phrase>
+    <source>Info</source>
+    <target>信息</target>
+</phrase>
+<phrase>
+    <source>countdown action is shutdown the system, are you sure?</source>
+    <target>倒计时器动作为关闭计算机，你确定吗？</target>
+</phrase>
+<phrase>
+    <source>Control</source>
+    <target>控制</target>
+</phrase>
+<phrase>
+    <source>set countdown action is make a beep sound(default)</source>
+    <target>设置倒计时器动作为报警（默认）</target>
+</phrase>
+<phrase>
+    <source>set countdown action is shutdown the system</source>
+    <target>设置倒计时器动作为关闭计算机</target>
+</phrase>
+<phrase>
+    <source>quit</source>
+    <target>退出</target>
+</phrase>
+<phrase>
+    <source>Language</source>
+    <target>语种</target>
+</phrase>
+<phrase>
+    <source>Help</source>
+    <target>帮助</target>
+</phrase>
+<phrase>
+    <source>running log</source>
+    <target>运行日志</target>
+</phrase>
+<phrase>
+    <source>running record</source>
+    <target>运行记录</target>
+</phrase>
+<phrase>
+    <source>about this program</source>
+    <target>关于本程序</target>
+</phrase>
+<phrase>
+    <source>open</source>
+    <target>打开</target>
+</phrase>
+<phrase>
+    <source>exit</source>
+    <target>退出</target>
+</phrase>
+<phrase>
+    <source>program is ready...</source>
+    <target>程序已就绪...</target>
+</phrase>
+<phrase>
+    <source>are you sure to quit?</source>
+    <target>你确定要退出吗？</target>
+</phrase>
+<phrase>
+    <source>start countup</source>
+    <target>开始计时器</target>
+</phrase>
+<phrase>
+    <source>pause countup</source>
+    <target>暂停计时器</target>
+</phrase>
+<phrase>
+    <source>reset countup</source>
+    <target>重设计时器</target>
+</phrase>
+<phrase>
+    <source>start countdown</source>
+    <target>开始倒计时器</target>
+</phrase>
+<phrase>
+    <source>pause countdown</source>
+    <target>暂停倒计时器</target>
+</phrase>
+<phrase>
+    <source>reset countdown</source>
+    <target>重设倒计时器</target>
+</phrase>
+<phrase>
+    <source>program is still running background.</source>
+    <target>程序仍在后台运行.</target>
+</phrase>
+<phrase>
+    <source>about this software</source>
+    <target>关于本软件</target>
+</phrase>
+</QPH>

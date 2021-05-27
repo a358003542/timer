@@ -40,7 +40,7 @@ class RecordTable(QDialog):
 
         for index, item in enumerate(running_record[::-1]):
             task_name = item.get('task_name', '')
-            last_time = item.get('current_time', '')
+            last_time = item.get('last_time', '')
             status = item.get('status', '')
             start_time = item.get('start_time', '')
             end_time = item.get('end_time', '')

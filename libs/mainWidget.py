@@ -16,13 +16,12 @@ class MainWidget(QWidget):
 
         self.initUI()
 
-        self.buttonStart.clicked.connect(self.parent.start_count)
-        self.buttonPause.clicked.connect(self.parent.timerUp.stop)
-        self.buttonReset.clicked.connect(self.parent.handle_count_reset)
+        self.buttonStart.clicked.connect(self.parent.start_countup)
+        self.buttonPause.clicked.connect(self.parent.pause_countup)
+        self.buttonReset.clicked.connect(self.parent.reset_countup)
         self.buttonCountDown.clicked.connect(self.parent.start_countdown)
-        self.buttonCountDownPause.clicked.connect(self.parent.timerDown.stop)
-        self.buttonCountDownReset.clicked.connect(
-            self.parent.handle_countdown_reset)
+        self.buttonCountDownPause.clicked.connect(self.parent.pause_countdown)
+        self.buttonCountDownReset.clicked.connect(self.parent.reset_countdown)
 
         self.countdown_edit_hour.currentIndexChanged.connect(
             self.countdown_edit_changed)
@@ -55,15 +54,15 @@ class MainWidget(QWidget):
         self.timeViewer.setDigitCount(8)  # 00:00:00
         mainLayout.addWidget(self.timeViewer)
 
-        self.buttonStart = QPushButton(self.tr("start"))
+        self.buttonStart = QPushButton(self.tr("start countup"))
         self.buttonStart.setMinimumHeight(35)
         mainLayout.addWidget(self.buttonStart)
 
-        self.buttonPause = QPushButton(self.tr("pause"))
+        self.buttonPause = QPushButton(self.tr("pause countup"))
         self.buttonPause.setMinimumHeight(35)
         mainLayout.addWidget(self.buttonPause)
 
-        self.buttonReset = QPushButton(self.tr("reset"))
+        self.buttonReset = QPushButton(self.tr("reset countup"))
         self.buttonReset.setMinimumHeight(35)
         mainLayout.addWidget(self.buttonReset)
 
@@ -93,11 +92,11 @@ class MainWidget(QWidget):
 
         mainLayout.addLayout(countdown_edit_hlayout)
 
-        self.buttonCountDown = QPushButton(self.tr("countdown"))
+        self.buttonCountDown = QPushButton(self.tr("start countdown"))
         self.buttonCountDown.setMinimumHeight(35)
-        self.buttonCountDownPause = QPushButton(self.tr("countdown pause"))
+        self.buttonCountDownPause = QPushButton(self.tr("pause countdown"))
         self.buttonCountDownPause.setMinimumHeight(35)
-        self.buttonCountDownReset = QPushButton(self.tr("countdown reset"))
+        self.buttonCountDownReset = QPushButton(self.tr("reset countdown"))
         self.buttonCountDownReset.setMinimumHeight(35)
 
         mainLayout.addWidget(self.buttonCountDown)
